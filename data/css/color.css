@@ -1,58 +1,26 @@
-/*code for welcome page
-
-footer {
-  z-index: 10;
-  display: block;
-  text-align: center;
-}
-.wel-info {
-  width: 50%;
-  height: 828px;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.9) 70%,
-    black
-  );
-}
-.space {
-  width: 50%;
-}
-.top {
-  margin-top: 51px;
-  background-image: url("../media/welcome1.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: flex;
-  flex-direction: row;
-  border: 2px solid red;
-  width: 100%;
-}
-.middle {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}*/
-.wel-body {
+/* styles for landing page*/
+.index-body {
+  scroll-behavior: smooth;
   margin: 0px;
   display: flex;
   flex-direction: column;
 }
-
-.top {
+.index-top,
+.about-top {
   background: url("../media/welcome1.png");
   background-repeat: no-repeat;
   background-position: left;
-  border: red 1px solid;
   display: flex;
   flex-direction: row;
   justify-content: end;
   margin: 51px 0 0 0;
   height: 700px;
 }
-.infor {
-  border: red 1px solid;
+.index-infor {
+  padding-top: 200px;
   width: 70%;
+  color: aliceblue;
+  text-align: center;
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0) 2%,
@@ -60,23 +28,63 @@ footer {
     rgba(0, 0, 0, 0.3) 10%,
     rgba(0, 0, 0, 1) 50%
   );
+  height: auto;
 }
-.middle {
+.btn-proceed,
+.btn-next,
+.p2-next {
+  color: white;
+  border: 2px solid rgb(12, 12, 136);
+  background-color: darkblue;
+  line-height: 40px;
+  width: 150px;
+  font-size: larger;
+  margin-bottom: 50px;
+}
+.wel-td {
+  width: 30%;
+}
+.wel-table {
+  width: 100%;
+  margin: 200px auto 0px 0px;
+  text-align: center;
+}
+.wel-tr {
+  width: 800px;
+  height: 90%;
+  border: black solid 2px;
+  padding: 4px;
+  text-align: center;
+}
+.p2-next {
+  margin-top: 70px;
+}
+.top-desc {
+  text-align: center;
+  margin: 50px auto;
+}
+.top-title {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 90px;
+}
+.index-middle {
+  text-align: center;
+  height: 700px;
+
+  margin-bottom: 200px;
+}
+.index-bottom {
   text-align: center;
   height: 500px;
-  border: red 1px solid;
-}
-.bottom {
-  text-align: center;
-  height: 500px;
-  border: red 1px solid;
 }
 .page2-body {
   display: flex;
   flex-direction: row;
   margin: 0 0 0 0;
 }
-.wel-nav {
+.index-nav {
   width: 100%;
   position: fixed;
   text-align: right;
@@ -84,87 +92,89 @@ footer {
   background: black;
   color: aliceblue;
   margin: 0 0 0 0;
+  text-decoration: none;
+  padding: 10px;
+  z-index: 10;
 }
-.wel-content,
-.wel-contacts {
+.index-content {
   margin: 0px auto 0px auto;
   width: 90%;
   height: 98%;
-  border: 1px solid green;
+  text-align: center;
+}
+.index-contacts {
+  margin: 0px auto 0px auto;
+  width: 90%;
+  height: 98%;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
-.wel-footer {
+.index-footer {
   margin: 0px;
-  height: 80%;
+  height: 50%;
   width: 100%;
-  background-color: bisque;
+  background-color: rgb(3, 3, 58);
+  color: white;
 }
-.next {
-  width: 50%;
-  margin: auto;
-}
-/*for page 2*/
-nav {
-  width: 100%;
-  position: fixed;
+.local .international {
   text-align: center;
-  overflow: hidden;
-  background-color: black;
-  color: aliceblue;
+  width: 50%;
+}
+.inter,
+.loc,
+.mus-desc {
+  margin: 50px auto;
+  width: 50%;
+}
+.user {
+  padding: 20px 0 0 50px;
+  width: 100%;
+  text-align: left;
+}
+
+/*for page 2*/
+
+.p2-body {
+  background: linear-gradient(30deg, #235789, #ce4bb8);
   margin: 0 0 0 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-bottom: 20px;
 }
-ol {
-  text-decoration: none;
-}
-li {
-  display: inline;
+.main-content {
+  width: 100%;
+  display: flex;
+  margin: 0 0 0 0;
+  height: 100%;
+  padding-bottom: 100px;
 }
 .content {
-  height: auto;
-  background: linear-gradient(to bottom, grey, black);
-  text-align: center;
-  z-index: 2;
-  margin: 0 0 0 300px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: start;
-  flex-wrap: wrap;
-  width: 1800px;
-}
-.sidebar {
-  padding-top: 60px;
-  position: fixed;
-  background-color: black;
-  color: aliceblue;
-  margin: 0 0 0 0;
-  width: 300px;
-  height: 900px;
+  margin: 70px 0 0 0;
 }
 .info {
+  width: 100%;
   float: right;
-  margin: 50px 0 0 0px;
-}
-.sidebar-item {
-  padding-left: 10px;
+  margin: 0 0 0 0;
+  transition: 1.5s linear;
 }
 .row1,
 .row2,
 .row3 {
-  margin: 0 0 0 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 -100px 0;
 }
 .title {
-  padding: 50px;
+  padding: 40px;
   text-align: left;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   margin: 0px 0px 0px 0px;
 }
 .music {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 400px;
+  height: 450px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -172,18 +182,71 @@ li {
 }
 .song {
   border-radius: 10px;
-  width: 20%;
-  height: 400px;
-  background-color: gray;
+  width: 200px;
+  height: 280px;
+  background-color: black;
   padding: 10px;
+  transition: all 0.3s;
+}
+.song:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+.song-info {
+  margin: 0px;
+  background-color: black;
+  color: white;
+  text-align: justify;
+}
+.song-title {
+  color: white;
+  text-align: center;
+}
+.buttons {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 100%;
+}
+/*code for about*/
+.about-body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+.school {
+  width: 50%;
+}
+/* code using element selector */
+audio {
+  width: 100%;
+  background-color: white;
+  height: 20px;
+}
+a {
+  text-decoration: none;
+  padding-left: 10px;
 }
 img {
   border-radius: 10px;
   margin-bottom: 0;
   width: 100%;
 }
-.song-info {
-  margin: 0px;
-  background-color: gray;
-  color: rgb(43, 43, 43);
+ol {
+  text-decoration: none;
+  margin-right: 40px;
+}
+li {
+  display: inline;
+}
+a:visited {
+  color: yellow;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+button:hover {
+  transition: all 0.3s linear;
 }
